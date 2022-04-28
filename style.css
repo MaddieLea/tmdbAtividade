@@ -1,0 +1,229 @@
+ /*import CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: #032541;
+  font-family: "Radio Canada", sans-serif;
+  background-image: url('https://pipocasclub.com.br/wp-content/uploads/2019/10/netflix-3.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+header {
+  height: 10vh;
+  
+  text-align: center;
+  
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  word-spacing: 0.7rem;
+  
+  color: #fff;
+}
+
+
+.search {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin: 15px auto;
+  padding: 20px;
+
+  background-color: transparent;
+  border-radius: 10px;
+  color: rgb(233, 233, 233);
+  box-shadow: 0 0 0.75rem rgb(255, 0, 0);
+  background-color: rgba(46, 43, 43, 0.8);
+
+  border: 3px solid transparent;
+}
+
+
+.button {
+  margin: 2px 0;
+  background-color: aqua ;
+}
+
+.result-title {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.results {
+  list-style: none;
+}
+
+.results > li {
+  width: 72vw;
+  height: 170px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  
+  border: 2px solid transparent;
+  /* box-shadow: 0 0 0.75rem #ff2200; */
+  border-radius: 0.5rem;
+  
+  margin: 2vw;
+  object-fit: cover;
+}
+
+.results > li img {
+  width: 80px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 2vw;
+  margin-top: 1.5vh;
+  
+}
+
+.results > li span {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 0.5vw;
+  
+}
+
+.results > li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-left: 2vw;
+    
+  } 
+  
+  .results > li button {
+    margin-top: 20px;
+  }
+  
+  #searchInput{
+    width: 35vw;
+    height: 45px;
+
+    border: 3px solid transparent;
+    border-radius: 0.4rem 0.2rem 0.4rem 0.2rem;
+    
+    margin-left: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 16px;
+    
+    text-align: match-parent;
+    text-indent: 10px;
+    letter-spacing: 0.5px;
+    outline: none;
+   
+   caret-color: purple;
+   color: rgb(48, 44, 44);
+}
+
+#searchInput:focus {
+  filter:drop-shadow(0 0 0.75rem rgb(255, 29, 29));
+  background-color: rgb(255, 255, 255);
+  
+}
+
+#searchInput::selection{
+  background-color: rgb(252, 30, 30);
+}
+
+#searchInput:hover {
+  filter:drop-shadow(0 0 0.75rem rgb(255, 29, 29));
+}
+
+
+#searchButton {
+  width: 10vw;
+  height: 45px;
+  
+  margin-left: 30vw;
+  margin-bottom: 3vh;
+  
+  border: 2px solid transparent;
+  filter:drop-shadow(0 0 0.75rem rgb(255, 9, 9));
+  border-radius: 0.5rem;
+  outline: none;
+  
+  background-color: rgb(27, 26, 26);
+  color: #FFF
+
+  
+}
+
+#searchButton{
+  cursor: pointer;
+}
+
+#clearButton {
+  width: 10vw;
+  height: 45px;
+  
+  margin-left: 30vw;
+  margin-bottom: 1.5vh;
+  
+  border: 2px solid transparent;
+  filter:drop-shadow(0 0 0.75rem rgb(255, 9, 9));
+  border-radius: 0.5rem;
+  outline: none;
+  
+  background-color: rgb(27, 26, 26);
+  color: #FFF;
+
+  font-family: 'Radio Canada', sans-serif;
+
+}
+
+#btnExcluide{
+  width: 8.5vw;
+  height: 35px;
+  
+  cursor: pointer;
+  
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 0 0.75rem rgb(158, 0, 0));
+
+  background-color:rgb(255, 29, 29);
+  color: #000;
+}
+
+#btnSave{
+  width: 8.5vw;
+  height: 35px;
+  
+  cursor: pointer;
+  
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 110, 0));
+
+  background-color:rgb(118, 252, 92);
+  color: #000;
+  font-family: 'Radio Canada', sans-serif;
+  transition: width 2s height 2s;
+
+}
+
+#btnSave:hover{
+  width: 9.2vw;
+  height: 40px;
+}
